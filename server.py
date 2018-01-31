@@ -28,7 +28,7 @@ def webhook():
         response = bot.respond_to(message)
 
         print "Outgoing to %s: %s" % (sender, response)
-        messenger.send_message(FACEBOOK_TOKEN, sender, response)
+        messenger.send_message_with_id(FACEBOOK_TOKEN, sender, response)
 
     return "ok"
 
